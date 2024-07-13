@@ -9,11 +9,11 @@ function checkAnswer() {
     const correctAnswer = "4";
     
     //Access value of the selected answer
-    const selectedRadioButton = document.querySelector('input[name="quiz"]:checked');
+    let userAnswer = document.querySelector('input[name="quiz"]:checked');
         
         //Retrieve the user's answer
-        if(selectedRadioButton){
-            let userAnswer = selectedRadioButton.value;
+        if(userAnswer){
+            let userAnswer = userAnswer.value;
             //Compare user's answer with the correct answer
             if(userAnswer === correctAnswer){
                 feedbackElement.textContent = "Correct! Well done.";
