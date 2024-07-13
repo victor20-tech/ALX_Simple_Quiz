@@ -12,7 +12,7 @@ function checkAnswer() {
     let selectedRadioInput = document.querySelector('input[name="quiz"]:checked');
         
         //Retrieve the user's answer
-        if(selectedRadioInput){
+        if (selectedRadioInput){
             const userAnswer = userAnswer.value;
             //Compare user's answer with the correct answer
             if(userAnswer === correctAnswer){
